@@ -149,6 +149,7 @@ h1,
     border: 1px solid var(--clr-light-grayish-blue-2);
     padding: 1rem;
     margin: 0.75rem 0;
+    border-radius: 0.25rem;
 }
 
 .private-message:hover,
