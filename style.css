@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors */
+    --clr-red: hsl(1, 90%, 64%);
+    --clr-blue: hsl(219, 85%, 26%);
+    /* Neutral Colors */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-very-light-grayish-blue: hsl(210, 60%, 98%);
+    --clr-light-grayish-blue-1: hsl(211, 68%, 94%);
+    --clr-light-grayish-blue-2: hsl(205, 33%, 90%);
+    --clr-grayish-blue: hsl(219, 14%, 63%);
+    --clr-dark-grayish-blue: hsl(219, 12%, 42%);
+    --clr-very-dark-blue: hsl(224, 21%, 14%);
+    /* Font Weights */
+    --fw-regular: 500;
+    --fw-bold: 800;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    color: var(--clr-dark-grayish-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
