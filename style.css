@@ -22,11 +22,10 @@
 }
 
 body {
-    padding: 3rem;
     background-color: hsl(240, 60%, 99%);
     position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--clr-dark-grayish-blue);
     display: flex;
     justify-content: center;
@@ -36,7 +35,7 @@ main {
     border-radius: 1rem;
     background-color: var(--clr-white);
     max-width: 725px;
-    padding: 1rem;
+    padding: 1.25rem;
     box-shadow: 0 0 1rem 1px rgba(147, 157, 174, 10%);
 }
 
@@ -80,7 +79,7 @@ h1,
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 1.25rem;
 }
 
 h1,
@@ -88,16 +87,25 @@ h1,
     color: var(--clr-very-dark-blue);
 }
 
+.user-name {
+    margin-right: 0.25rem;
+}
+
 .post {
     color: inherit;
+    margin-left: 0.25rem;
 }
 
 .group-name {
     color: var(--clr-blue);
 }
 
+time {
+    color: var(--clr-grayish-blue);
+}
+
 .notification {
-    margin: 0.75rem 0;
+    margin: 1.5rem;
     border-radius: 0.5rem;
     list-style: none;
     display: flex;
