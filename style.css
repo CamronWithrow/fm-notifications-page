@@ -44,18 +44,10 @@ header {
     gap: 1rem;
 }
 
-.mark-all-read {
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
-}
-
-.mark-all-read:hover,
-.mark-all-read:focus {
-    color: var(--clr-blue);
-    cursor: pointer;
+h1 {
+    color: var(--clr-very-dark-blue);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
 }
 
 a {
@@ -71,37 +63,39 @@ img {
     height: 3rem;
 }
 
-h1,
-.user-name,
-.post,
-.group-name {
-    font-weight: var(--fw-bold);
+time {
+    color: var(--clr-grayish-blue);
 }
 
-h1 {
-    font-size: 1.25rem;
+.mark-all-read {
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
 }
 
-h1,
+.mark-all-read:hover,
+.mark-all-read:focus {
+    color: var(--clr-blue);
+    cursor: pointer;
+}
+
 .user-name {
     color: var(--clr-very-dark-blue);
-}
-
-.user-name {
+    font-weight: var(--fw-bold);
     margin-right: 0.25rem;
 }
 
 .post {
     color: inherit;
+    font-weight: var(--fw-bold);
     margin-left: 0.25rem;
 }
 
 .group-name {
     color: var(--clr-blue);
-}
-
-time {
-    color: var(--clr-grayish-blue);
+    font-weight: var(--fw-bold);
 }
 
 .notification {
@@ -143,14 +137,14 @@ time {
     padding: 0.25rem;
 }
 
-.picture>img {
-    display: block;
-    height: 3rem;
-}
-
 .picture:hover,
 .picture:focus {
     background-color: var(--clr-light-grayish-blue-2);
+}
+
+.picture>img {
+    display: block;
+    height: 3rem;
 }
 
 .private-message {
