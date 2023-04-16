@@ -31,6 +31,12 @@ body {
     align-items: center;
 }
 
+@media (min-width: 40rem) {
+    body {
+        font-size: 1rem;
+    }
+}
+
 main {
     background-color: var(--clr-white);
     padding: 1rem;
@@ -49,6 +55,12 @@ h1 {
     color: var(--clr-very-dark-blue);
     font-size: 1.25rem;
     font-weight: var(--fw-bold);
+}
+
+@media (min-width: 40rem) {
+    h1 {
+        font-size: 1.5rem;
+    }
 }
 
 a {
