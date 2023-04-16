@@ -22,21 +22,22 @@
 }
 
 body {
-    background-color: hsl(240, 60%, 99%);
-    position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 0.825rem;
     color: var(--clr-dark-grayish-blue);
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
-    border-radius: 1rem;
     background-color: var(--clr-white);
-    max-width: 725px;
-    padding: 1.25rem;
+    padding: 1rem;
     box-shadow: 0 0 1rem 1px rgba(147, 157, 174, 10%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 header {
@@ -60,7 +61,7 @@ a:focus {
 }
 
 img {
-    height: 3rem;
+    height: 2.5rem;
 }
 
 time {
@@ -98,8 +99,15 @@ time {
     font-weight: var(--fw-bold);
 }
 
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .notification {
-    margin: 1.5rem;
+    outline: 1px dashed red;
+    padding: 1rem;
     border-radius: 0.5rem;
     list-style: none;
     display: flex;
@@ -124,10 +132,11 @@ time {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.25rem;
+    width: 1.825rem;
     color: var(--clr-white);
+    font-size: 0.925rem;
     font-weight: var(--fw-bold);
-    border-radius: 0.25rem;
+    border-radius: 0.325rem;
     background-color: var(--clr-blue);
 }
 
@@ -140,11 +149,6 @@ time {
 .picture:hover,
 .picture:focus {
     background-color: var(--clr-light-grayish-blue-2);
-}
-
-.picture>img {
-    display: block;
-    height: 3rem;
 }
 
 .private-message {
