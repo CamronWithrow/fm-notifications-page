@@ -13,7 +13,7 @@
     --clr-very-light-grayish-blue: hsl(210, 60%, 98%);
     --clr-light-grayish-blue-1: hsl(211, 68%, 94%);
     --clr-light-grayish-blue-2: hsl(205, 33%, 90%);
-    --clr-grayish-blue: hsl(219, 14%, 63%);
+    --clr-grayish-blue: hsl(218, 14%, 63%);
     --clr-dark-grayish-blue: hsl(219, 12%, 42%);
     --clr-very-dark-blue: hsl(224, 21%, 14%);
     /* Font Weights */
@@ -22,12 +22,144 @@
 }
 
 body {
+    padding: 3rem;
+    background-color: hsl(240, 60%, 99%);
+    position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 16px;
     color: var(--clr-dark-grayish-blue);
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    border-radius: 1rem;
+    background-color: var(--clr-white);
+    max-width: 725px;
+    padding: 1rem;
+    box-shadow: 0 0 1rem 1px rgba(147, 157, 174, 10%);
+}
+
+header {
+    display: flex;
+    gap: 1rem;
+}
+
+.mark-all-read {
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.mark-all-read:hover,
+.mark-all-read:focus {
+    color: var(--clr-blue);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--clr-blue);
+}
+
+img {
+    height: 3rem;
+}
+
+h1,
+.user-name,
+.post,
+.group-name {
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h1,
+.user-name {
+    color: var(--clr-very-dark-blue);
+}
+
+.post {
+    color: inherit;
+}
+
+.group-name {
+    color: var(--clr-blue);
+}
+
+.notification {
+    margin: 0.75rem 0;
+    border-radius: 0.5rem;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.unread {
+    background-color: var(--clr-very-light-grayish-blue);
+}
+
+.unread .notification-message::after {
+    content: "";
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--clr-red);
+    margin-left: 0.25rem;
+}
+
+.unread-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.25rem;
+    color: var(--clr-white);
+    font-weight: var(--fw-bold);
+    border-radius: 0.25rem;
+    background-color: var(--clr-blue);
+}
+
+.picture {
+    border-radius: 0.75rem;
+    margin-left: auto;
+    padding: 0.25rem;
+}
+
+.picture>img {
+    display: block;
+    height: 3rem;
+}
+
+.picture:hover,
+.picture:focus {
+    background-color: var(--clr-light-grayish-blue-2);
+}
+
+.private-message {
+    border: 1px solid var(--clr-light-grayish-blue-2);
+    padding: 1rem;
+    margin: 0.75rem 0;
+}
+
+.private-message:hover,
+.private-message:focus {
+    cursor: pointer;
+    background-color: var(--clr-light-grayish-blue-2);
 }
 
 .attribution {
+    position: absolute;
+    bottom: 0;
     font-size: 11px;
     text-align: center;
 }
